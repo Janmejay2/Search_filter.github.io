@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 70px 85px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #4CAF50, #2196f3);
+    animation: gradientAnimation 5s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#countryDalo {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    transition: background-color 0.3s;
+}
+
+#countryDalo:focus {
+    background-color: #fff;
+}
+
+#Name {
+    list-style-type: none;
+    padding: 10px 10px;
+    margin: 0;
+    max-height: 330px;
+    overflow-y: auto;
+}
+
+#Name li {
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: #b6e59b;
+    color: #333;
+    margin-bottom: 5px;
+    border: 1px solid #b6e59b;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#Name li a {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    color: rgb(49, 50, 52);
+    transition: background-color 0.3s;
+}
+
+#Name li a:hover:not(.header) {
+    background-color: #b6e59b;
+}
